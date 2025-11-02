@@ -185,7 +185,7 @@
         const keySound = new Audio('data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAAABkYXRhAAAAAA==');
         
 // MP3 sound from Google Drive for the 555 easter egg
-const specialCallSound = new Audio('https://drive.google.com/uc?export=download&id=1sh1c003Cho7w2341ajx405HVJiWLo6Cx');
+const specialCallSound = new Audio('audio.mp3');
         /* ▲▲▲ END ADDED SOUNDS ▲▲▲ */
 
 
@@ -226,7 +226,7 @@ const specialCallSound = new Audio('https://drive.google.com/uc?export=download&
             }
             
             /* ▼▼▼ ADDED 555 EASTER EGG ▼▼▼ */
-            if (currentNumber === '555555555') {
+            if (currentNumber === '555') {
                 isCalling = true;
                 screenDisplay.textContent = 'Special Call!';
                 specialCallSound.currentTime = 0;
